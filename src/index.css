@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-button-prev {
+	color: white;
+	background-color: black;
+	padding: 18px;
+	border-radius: 50%;
+}
+
+.swiper-button-next {
+	color: white;
+	background-color: black;
+	padding: 18px;
+	border-radius: 50%;
+}
+
+:root {
+	--swiper-navigation-size: 20px;
+}
+
+.lato-thin {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lato-light {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lato-regular {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lato-bold {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lato-black {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lato-thin-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lato-light-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lato-regular-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lato-bold-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lato-black-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+.loader {
+	width: 20px;
+	aspect-ratio: 1;
+	display:grid;
+	-webkit-mask: conic-gradient(from 15deg,#0000,#000);
+	animation: l26 1s infinite steps(12);
+  }
+  .loader,
+  .loader:before,
+  .loader:after{
+	background:
+	  radial-gradient(closest-side at 50% 12.5%,
+	   #f03355 96%,#0000) 50% 0/20% 80% repeat-y,
+	  radial-gradient(closest-side at 12.5% 50%,
+	   #f03355 96%,#0000) 0 50%/80% 20% repeat-x;
+  }
+  .loader:before,
+  .loader:after {
+	content: "";
+	grid-area: 1/1;
+	transform: rotate(30deg);
+  }
+  .loader:after {
+	transform: rotate(60deg);
+  }
+  
+  @keyframes l26 {
+	100% {transform:rotate(1turn)}
+  }
